@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclos Eizagirre | Tienda y Taller de Bicicletas en Zarautz</title>
+  <meta name="description" content="Tienda y taller de bicicletas en Zarautz. Venta, reparación y puesta a punto con trato cercano. Gipuzkoa kalea 32. Llámanos o escríbenos por WhatsApp.">
+  <meta name="theme-color" content="#0f172a">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#0d9488', dark: '#0f766e', light: '#5eead4' },
+            ink: '#0f172a'
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(13,148,136,.25), transparent 45%),
+        radial-gradient(circle at 80% 0%, rgba(94,234,212,.18), transparent 40%),
+        #0f172a;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Banner fijo de propuesta -->
+  <div class="fixed top-0 inset-x-0 z-50 bg-ink/95 text-white text-[11px] sm:text-xs backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-3 py-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
+      <span class="text-brand-light font-semibold">Propuesta de diseño web</span>
+      <span class="text-white/60">creada para Ciclos Eizagirre</span>
+      <span class="text-white/30 hidden sm:inline">·</span>
+      <span class="text-white/70">Contacto:</span>
+      <a href="mailto:xabier.lazcoz.web@gmail.com" class="underline decoration-brand-light/60 hover:text-brand-light transition">xabier.lazcoz.web@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-[38px] sm:top-[34px] inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-2 font-extrabold text-ink text-lg tracking-tight">
+        <svg class="w-8 h-8 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
+          <path d="M15 6h-3l-3 8"/><path d="M12 6l4.5 8"/><path d="M6 6h4"/>
+        </svg>
+        Ciclos&nbsp;Eizagirre
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#servicios" class="hover:text-brand-dark transition">Servicios</a>
+        <a href="#ubicacion" class="hover:text-brand-dark transition">Ubicación</a>
+        <a href="#contacto" class="hover:text-brand-dark transition">Contacto</a>
+      </nav>
+      <a href="tel:+34688688113" class="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark transition shadow-sm">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hidden sm:inline">Llamar</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero-bg text-white pt-40 pb-20 sm:pt-44 sm:pb-28">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1 text-xs font-medium text-brand-light mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-light animate-pulse"></span>
+          Taller y tienda en Zarautz
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
+          Tu bici,<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand">lista para rodar.</span>
+        </h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-lg">
+          Venta, reparación y puesta a punto en el corazón de Zarautz. Mecánica de confianza, asesoramiento honesto y ese trato de barrio que no encuentras en las grandes cadenas.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/34688688113?text=Hola%20Ciclos%20Eizagirre%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20reparaci%C3%B3n" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 font-semibold text-white hover:bg-brand-dark transition shadow-lg shadow-brand/20">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.5 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.9 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <a href="#servicios" class="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/15 px-6 py-3.5 font-semibold text-white hover:bg-white/15 transition">
+            Ver servicios
+          </a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Lun–Vie: 9:30–13:30 · 16:30–20:00
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Gipuzkoa kalea 32, Zarautz
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-brand/20 to-transparent rounded-[2rem] blur-2xl"></div>
+        <div class="relative rounded-[1.75rem] overflow-hidden border border-white/10 shadow-2xl">
+          <img src="https://placehold.co/800x600/1e293b/ffffff?text=Taller+Ciclos+Eizagirre" alt="Taller de bicicletas Ciclos Eizagirre en Zarautz" width="800" height="600" loading="eager" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full bg-brand/10 flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div>
+            <p class="text-ink font-bold text-sm leading-tight">Puesta a punto</p>
+            <p class="text-slate-500 text-xs">rápida y profesional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-2xl mx-auto text-center">
+        <span class="text-brand-dark font-semibold text-sm uppercase tracking-wider">Servicios</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-ink tracking-tight">Todo lo que tu bici necesita</h2>
+        <p class="mt-4 text-slate-500">Desde una revisión antes de la temporada hasta la elección de tu próxima bicicleta. Te acompañamos en cada pedalada.</p>
+      </div>
+
+      <div class="mt-14 grid gap-6 md:grid-cols-3">
+        <!-- Taller -->
+        <article class="group rounded-2xl border border-slate-200 bg-slate-50 p-7 hover:border-brand/40 hover:shadow-lg hover:shadow-brand/5 transition">
+          <div class="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white text-brand-dark transition">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-ink">Taller mecánico</h3>
+          <p class="mt-3 text-slate-500 text-sm leading-relaxed">Reparación de frenos, transmisión, ruedas y suspensiones. Diagnóstico honesto y presupuesto sin sorpresas.</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Revisiones y puesta a punto</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Cambio de cubiertas y cámaras</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Ajuste de cambios y frenos</li>
+          </ul>
+        </article>
+
+        <!-- Venta -->
+        <article class="group rounded-2xl border border-slate-200 bg-slate-50 p-7 hover:border-brand/40 hover:shadow-lg hover:shadow-brand/5 transition">
+          <div class="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white text-brand-dark transition">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h-3l-3 8"/><path d="M12 6l4.5 8"/><path d="M6 6h4"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-ink">Venta de bicicletas</h3>
+          <p class="mt-3 text-slate-500 text-sm leading-relaxed">Carretera, montaña, gravel, urbana o eléctrica. Te asesoramos según tu uso, presupuesto y talla real.</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Bicis nuevas y de ocasión</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Asesoramiento de tallaje</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Pruebas y entrega ajustada</li>
+          </ul>
+        </article>
+
+        <!-- Accesorios -->
+        <article class="group rounded-2xl border border-slate-200 bg-slate-50 p-7 hover:border-brand/40 hover:shadow-lg hover:shadow-brand/5 transition">
+          <div class="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:text-white text-brand-dark transition">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-ink">Accesorios y recambios</h3>
+          <p class="mt-3 text-slate-500 text-sm leading-relaxed">Cascos, luces, candados, portabultos, ropa y repuestos para tenerlo todo a mano cuando más lo necesitas.</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Cascos y seguridad</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Luces y señalización</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>Recambios de taller</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franja CTA -->
+  <section class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">¿Tu bici lleva tiempo parada?</h2>
+        <p class="mt-2 text-slate-300">Pásate por el taller y la dejamos lista para la próxima ruta. Sin compromiso.</p>
+      </div>
+      <a href="https://wa.me/34688688113?text=Hola%2C%20quiero%20pedir%20cita%20en%20el%20taller" target="_blank" rel="noopener" class="shrink-0 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 font-semibold hover:bg-brand-dark transition">
+        Pedir cita por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Ubicación + contacto -->
+  <section id="ubicacion" class="py-20 sm:py-28 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <span class="text-brand-dark font-semibold text-sm uppercase tracking-wider">Ubicación y contacto</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-ink tracking-tight">Ven a vernos en Zarautz</h2>
+        <p class="mt-4 text-slate-500">Estamos en pleno centro, cerca de todo. Trae tu bici andando o en coche: te ayudamos a descargarla.</p>
+
+        <dl class="mt-8 space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 text-brand-dark">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Dirección</dt>
+              <dd class="mt-1 text-ink font-medium">Gipuzkoa kalea 32, Zarautz</dd>
+              <dd class="text-sm text-slate-500">Gipuzkoa</dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 text-brand-dark">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Teléfono</dt>
+              <dd class="mt-1"><a href="tel:+34688688113" class="text-ink font-medium hover:text-brand-dark transition">+34 688 68 81 13</a></dd>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center shrink-0 text-brand-dark">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide text-slate-400">Horario orientativo</dt>
+              <dd class="mt-1 text-ink font-medium">Lunes a viernes: 9:30–13:30 / 16:30–20:00</dd>
+              <dd class="text-sm text-slate-500">Sábado: 10:00–13:30 · Domingo cerrado</dd>
+            </div>
+          </div>
+        </dl>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/34688688113?text=Hola%20Ciclos%20Eizagirre%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 font-semibold text-white hover:bg-brand-dark transition">
+            WhatsApp
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Gipuzkoa+kalea+32+Zarautz" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-white border border-slate-200 px-6 py-3 font-semibold text-ink hover:border-brand/40 transition">
+            Cómo llegar
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+        <img src="https://placehold.co/800x600/e2e8f0/0f172a?text=Gipuzkoa+kalea+32%2C+Zarautz" alt="Mapa de ubicación de Ciclos Eizagirre en Gipuzkoa kalea 32, Zarautz" width="800" height="600" loading="lazy" class="w-full h-auto object-cover">
+        <div class="p-6">
+          <p class="text-sm font-semibold text-ink">Ciclos Eizagirre</p>
+          <p class="mt-1 text-sm text-slate-500">Gipuzkoa kalea 32 · Zarautz (Gipuzkoa)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-ink text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+      <div class="flex items-center gap-2 text-white font-extrabold">
+        <svg class="w-7 h-7 text-brand-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h-3l-3 8"/><path d="M12 6l4.5 8"/><path d="M6 6h4"/></svg>
+        Ciclos Eizagirre
+      </div>
+      <p>Gipuzkoa kalea 32 · Zarautz · <a href="tel:+34688688113" class="hover:text-white transition">+34 688 68 81 13</a></p>
+      <p class="text-slate-500">© <span id="year"></span> Ciclos Eizagirre</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/34688688113?text=Hola%20Ciclos%20Eizagirre%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Ciclos Eizagirre"
+     class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white font-semibold shadow-lg shadow-black/20 hover:bg-[#1ebe57] transition">
+    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.5 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 14.9 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BicycleStore",
+    "name": "Ciclos Eizagirre",
+    "description": "Tienda y taller de bicicletas en Zarautz. Venta, reparación y puesta a punto de bicicletas.",
+    "image": "https://placehold.co/800x600/1e293b/ffffff?text=Ciclos+Eizagirre",
+    "telephone": "+34688688113",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gipuzkoa kalea 32",
+      "addressLocality": "Zarautz",
+      "addressRegion": "Gipuzkoa",
+      "postalCode": "20800",
+      "addressCountry": "ES"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Zarautz"
+    },
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:30",
+        "closes": "13:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "16:30",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "13:30"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
